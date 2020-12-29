@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'dbms.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'royalmotors',
+        'NAME': 'website',
         'USER': 'root',
-        'PASSWORD': 'spiky',
+        'PASSWORD': 'system',
         'HOST': 'localhost',
         'PORT': '3306',
     }

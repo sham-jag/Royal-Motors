@@ -54,9 +54,14 @@
           <li><a href="/carmodel">Car Model</a>
           </li>
           <li><a href="/testdrive">Test Drive</a></li>
-          <li><a href="/customization">Customisation</a></li>
+          <li><a href="/customisation">Customisation</a></li>
+          {% if user.is_authenticated %}
+          <li><a>Hello, {{user.first_name}}</a>}</li>
+          <li><a href="/logout">Logout</a></li>
+          {% else %}
           <li><a href="/login">Login</a></li>
           <li><a href="/register">Registration</a></li>
+          {% endif %}
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav><!-- .nav-menu -->
